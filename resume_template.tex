@@ -1,0 +1,195 @@
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\expItem}[1]{
+  \item\small{
+    {#1}\vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\ExperienceItem}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \href{#1}{\textbf{#2}} \hspace{5pt} #3 & \textit{#4}  
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Anurag Verma}} & Email: \href{mailto:}{anuragv1058@gmail.com}\\
+  \href{https://www.linkedin.com/in/anurag2276/}{LinkedIn: linkedin.com/in/anurag2276} & Mobile:~~~+917838063139 \\
+  \href{https://github.com/Anurag-error404}{Github: ~~github.com/Anurag-error404} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Netaji Subhas University of Technology}{Delhi, India}
+      {Bachelor of Technology - Computer Engineering;  GPA: 7.87}{November 2020 - Present}
+      % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+    \resumeSubHeadingListEnd
+    \vspace{-10pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Spring Meadows Public School}{Delhi, India}
+      {Class XII - CBSE;  Percentage: 94.8}{2020}
+    \resumeSubHeadingListEnd
+    \vspace{-10pt}
+    
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Spring Meadows Public School}{Delhi, India}
+      {Class X - CBSE;  Percentage: 90.8}{2018}
+    \resumeSubHeadingListEnd
+    
+	    
+\vspace{-5pt}
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~~Dart, Python, C++, JavaScript}
+	\resumeSubItem{Frameworks}{~~~~Flutter (State Management: Bloc, Provider, Getx), ReactJS, NodeJS, Strapi, Tensorflow, OpenCV}
+	\resumeSubItem{Database}{~~~~~~~~MySQL, FirebaseFirestore, Hive, MongoDB}
+	\resumeSubItem{Others}{~~~~~~~~~~~~Linux, AWS, GCP, UI/UX Design, Git}
+	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Event Management, Writing,Team work, Time Management}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \ExperienceItem{https://www.unicohub.com/}{Unicohub}
+    {\textbf{Flutter Developer}}{April 2022 - Present}
+    \resumeItemListStart
+    \expItem{Employed \textbf{Bloc Architecture} and \textbf{REST APIs} to handle app state, widget lifecycle \& integrate diverse functionalities.}    
+    \expItem{Integrated \textbf{Razorpay, CashFree Payment SDKs} \& implemented paid subscription system for in-app transactions.}
+    \expItem{Used Agora SDK and Socket.io to implement video group chats within the app, Developed a Real-time Gameshow feature on top of that, promoting live creator-audience monetized and rewarding interaction.}
+    \expItem{Incorporated \textbf{AppsFlyer SDK} for user behavior tracking, optimizing app performance increasing user retention by 30\%.}
+    \expItem{Leveraged\textbf{ Flutter Webview} to integrate Unity games \&  imporve in-app engagement by avg 10 min per user.}
+    \resumeItemListEnd
+\vspace{1pt}
+    \ExperienceItem{https://play.google.com/store/apps/details?id=in.dzor.dzor_app}{Dzor}{\textbf{Flutter Developer}}{July 2022 - January 2023}
+		\resumeItemListStart
+        \expItem{Enhanced UI designs by introducing interactive elements and personalized user interfaces, customized Snackbar pop-ups, and
+navigation animations, resulting in a visually appealing and user-friendly application}
+\expItem{Implemented \textbf{API for seamless checkout of multiple products} in single transaction resulting in 25\% more orders}
+\expItem{Utilized \textbf{Firebase Crashlytics} to achieve a \textbf{99.6\% crash-free user rate} by  resolving bugs, app crashes, and ANRs}
+\expItem{Leveraged \textbf{Firebase Analytics} to log events and analyze user interaction with various app sections, while optimizing codebase and \textbf{improving performance by 70\% using GetX state management}.}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-10pt}
+\section{Projects}
+\resumeSubHeadingListStart
+
+\ExperienceItem{https://tnp-static-new.vercel.app/}{Placement Cell NSUT}{}{}
+\resumeItemListStart
+\expItem{Developed a robust infrastructure to support student and admin needs, revolutionizing the Placement Cell's operations and enhancing user experience, \textbf{serving a user base of over 10,000 individuals}.}
+\expItem{Oversaw the development of a Landing Website, Student \& Admin Portal, Backend infrastructure and Student App}
+\expItem{Took advantage of additional technologies such as transactional mailers, AWS services and Firebase for seamless development and integration.}
+\expItem{\textbf{Technologies Used : ReactJS, NodeJs, Strapi, Firebase, Flutter, REST API, AWS (Ec2, S3, Route53, CloudFront), MongoDb, SMTP Mail server}}
+\resumeItemListEnd
+
+\vspace{-3pt}
+
+\ExperienceItem{https://play.google.com/store/apps/details?id=com.venatus.nsut_app_new\&hl=en_IN\&gl=US}{Venatus NSUT}{}{}
+\resumeItemListStart
+\expItem{Mobile application designed to serve the gaming community, with a range of features. \textbf{User Authentication} with email verification, \textbf{Esports Feed, Teammate discovery, Global Chats} and past events highlights. \textbf{Push Notifications} for latest upcoming events and in-app event registrations for the users}
+\expItem{\textbf{Technologies Used : Flutter, Firebase, AWS, Socket.io, NodeJs}}
+\resumeItemListEnd
+\vspace{-3pt}
+\ExperienceItem{https://github.com/Anurag-error404/bff-feminova}{Feminova}{}{}
+\resumeItemListStart
+\expItem{Application designed to provide women with a range of features to support their menstrual health and hygiene}
+\expItem{Key Features : Menstrual cycle tracking, story sharing (Blogs), Hygienic washroom locator in neav vicinity, ecommerce platform to buy female hygiene products.}
+\expItem{\textbf{Technologies Used : Flutter, Firebase, Maps SDK, NodeJs, REST APIs}}
+\resumeItemListEnd
+\vspace{-3pt}
+\ExperienceItem{https://github.com/Anurag-error404/text-recognition-flutter}{Text Recognition App}{}{}
+\resumeItemListStart
+\expItem{Flutter app to convert digital ink to text, identify and extract words from different text images with accuracy over 90\% \textbf{Technologies used: Flutter, Python, Machine Learning, Computer Vision, Tensorflow}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Positions of Responsibility}
+\resumeSubHeadingListStart
+\resumeSubItem{Head of Technology - Venatus NSUT}{Directly Responsible for Leading Tech Team of Venatus NSUT, mentoring 10+ individuals in a variety of technologies)}
+\vspace{2pt}
+\resumeSubItem{Event Head - GCL 2.0}{Gamers Changing Lives is a fundraising event for social cause. Organized and headed 3 day online multiplayer gaming event in May 2021, raising INR 10k for covid relie}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+\end{document}
